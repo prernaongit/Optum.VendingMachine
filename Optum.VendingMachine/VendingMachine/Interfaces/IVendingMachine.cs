@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Optum.Services.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -34,13 +35,13 @@ namespace Optum.Services.VendingMachine.Interfaces
         /// </summary>
         /// <param name=""></param>
         /// <returns> </returns>
-        public void DispenseProduct();
+        public void DispenseProduct(MenuOption menuOption);
 
         /// <summary>
         /// calcualtes current ammount for current User after product dispense
         /// </summary>
         /// <param name="">.</param>
         /// <returns></returns>
-        public double DispenseChange();
+        public void DispenseChange();
     }
 }
